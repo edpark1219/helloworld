@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+	<!-- linking CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+	<link rel="stylesheet" href="HelloWorld.css" />
+	
+	<!-- javascript, UI, firebase -->
+	<script src="https://www.gstatic.com/firebasejs/3.7.5/firebase.js"></script>
+	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="HelloWorld.js"></script>
+
+	<script async defer src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyDdQzv3bDjvy7wRLe0dF8pBB1n_4bix_Bs&callback=initMap"></script>
+
+</head>
+<body>
+
+	<!-- Title Header Row -->
+	<div class="row">
+		<div class="col-md-4">
+		</div>
+
+		<div class="col-md-4">
+			<center><a href="index.html"><h1>HELLO WORLD</h1></a></center>
+		</div>
+
+		<div class="col-md-4">
+		</div>
+	</div>
+
+	<hr>
+
+	<hr>
+
+	<div class="row">	
+		<!-- Create Journal side of the page -->
+		<div id="create" class="col-md-3">
+			<img id="mainCreateButton" src="images/createEntry.png">
+			<!-- This is the diary entry form -->
+			<div id="paper">	
+				<form id="diaryInput">
+				<center>
+					<p>
+						<label>Your Name</label>
+					</p>
+					<p>
+						<input id="name" class="form-group journal" type="text">
+					</p>
+					<p>
+						<label>Place</label>
+					</p>
+					<p>
+						<input id="entryPlace" class="form-group journal" type="text" placeholder="city, state">
+					</p>
+
+					<p>
+						<label>What's your reason for traveling</label>
+					</p>
+					<p>
+						<input id="reasonTravel" class="form-group journal" type="text">
+					</p>
+					<p>
+						<center>
+							<div class="form-group">
+		  							<label for="overview">Overview</label>
+		  							<textarea class="form-control" rows="5" columns="5" id="overview"></textarea>
+							</div>
+						</center>
+					</p>
+					<p>
+						<input id="submitJournalEntry" type="button" value="Submit Entry">
+						<input id="searchButton" type="button" value="Search Places">
+					</p>
+				</center>	
+				</form>
+			</div>
+		</div>
+
+		<!-- Interactive Map image placed here --> 
+		<div id="mapContainer" class="col-md-6">
+			<div id="map">
+			</div>
+
+			<div id="resultsJournalDetail">
+			</div>
+		</div>
+		
+		<!-- Search Journal side of the page -->
+		<div id="search" class="col-md-3">
+			<img id="mainSearchButton" src="images/binocular.png">
+
+			<form id="criteria">
+				<center>
+					<p>
+						<label>Place</label>
+					</p>
+					<p>
+						<input id="place" class="form-group" type="text">
+					</p>
+
+					<p>
+						<input id="resultSubmitButton" type="button" value="Search Entries">
+						<input id="createButton" type="button" value="Create Entry">
+					</p>
+				</center>
+			</form>
+
+			<div class="row" id="resultsTabContainer">
+			</div>
+	
+		</div>
+	
+</body>
+</html>

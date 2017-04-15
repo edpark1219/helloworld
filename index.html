@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Landing Page</title>
+ 
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400italic,700italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Montserrat:400,700'>
+    
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Playfair+Display:400italic,700italic'>
+
+    <link rel="stylesheet" href="style.css">
+    
+  
+</head>
+    <body>
+
+        <div class="container">
+
+            <div class="container__item landing-page-container">
+                
+                <div class="content__wrapper">
+
+                    <div class="ellipses-container">
+
+                        <div class="ellipses ellipses__outer--thin">
+
+                            <div class="ellipses ellipses__orbit">
+                        
+                        </pdiv>
+
+                    </div>
+                       
+                </div>
+
+            </div>
+
+                    <div class="scroller">
+                        <p class="page-title"></p>
+
+                        
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+                   <!-- EXPLODING MENU -->
+
+                    <div id="stage">
+                      <div id="circle-menu"><a class="menu-trigger" href="#" data-open="HELLO" data-close="WORLD"></a>
+                        <ul>
+                            <li><a href="HelloWorld.html">New</a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#">Explore</a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <!-- END EXPLODING MENU -->
+                    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+                    
+                <script type="text/javascript">
+                    (function() {
+                        $('.menu-trigger').on('click', function(e) {
+                            e.preventDefault();
+                                return $('#circle-menu').toggleClass('open');
+                        });
+                    }).call(this);
+                </script>
+        
+    </body>
+</html>
+  
+  

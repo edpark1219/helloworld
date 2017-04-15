@@ -1,0 +1,222 @@
+/* this is each sectionbox (create, search and map) */
+#create {
+	height: 700px;
+}
+
+#search {
+	height: 700px;
+}
+
+#mapContainer {
+	height: 700px;
+	border-radius: 10px;
+}
+	
+#map {
+	height: 700px;
+	width: 100%;
+	border-radius: 10px;
+	border: 2px solid #000;
+	z-index: 1;
+	
+}
+
+/* these are the main buttons on the world page (createEntry or searchPlace) */
+#mainCreateButton {
+	width: 70px;
+	height: 70px;
+	position: relative;
+	top: 45%;
+	left: 40%;
+}
+
+#mainSearchButton {
+	width: 70px;
+	height: 70px;
+	position: relative;
+	top: 45%;
+	left: 40%;
+}
+
+/* these are the input info buttons */
+#submitJournalEntry {
+	border-radius: 3px;
+	background-color: #a0a7af;
+	color: #fff;
+	width: 125px;
+	height: 30px;
+}
+
+#searchButton {
+	border-radius: 3px;
+	background-color: #a0a7af;
+	color: #fff;
+	width: 125px;
+	height: 30px;
+}
+
+#createButton {
+	border-radius: 3px;
+	background-color: #a0a7af;
+	color: #fff;
+	width: 125px;
+	height: 30px;
+}
+
+#resultSubmitButton {
+	border-radius: 3px;
+	background-color: #a0a7af;
+	color: #fff;
+	width: 125px;
+	height: 30px;
+}
+
+/* these are the sections where the search results will be displayed */
+#resultsJournalDetail {
+	width: 75%;
+	height: 700px;
+	background-color: #482;
+	border-radius: 10px;
+	margin: 0 auto;
+	display: none;
+	z-index: 2;
+}
+
+#resultsTabContainer {
+	height: 530px;
+	width: 98%;
+	border-right: 5px;
+	border-radius: 5px;
+	margin-top: 10px;
+	margin: 0 auto;
+	overflow: scroll;
+	display: none;
+}
+
+.condensedInfo {
+	background-color: #b75651;
+	width: 80%;
+	height: auto;
+	position: relative;
+	margin: 0 auto;
+	margin-top: 10px;
+	border-radius: 5px;
+}
+
+.tabLine {
+	text-align: left;
+	font-size: 16px;
+	color: #fff;
+}
+
+.tabPlace {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	height: auto;
+	margin: 10px;
+
+}
+
+/* this is the createEntry input (diaryInput) form and everything that goes within it */
+#diaryInput {
+	display: none;
+	height: 700px;
+	padding: 40px 0 40px 20px;
+}
+
+#overview {
+	width: 80%;
+	height: 300px;
+	overflow: scroll;
+}
+
+/* this is the searchPlace input (criteria) form and everything that goes within it */
+#criteria {
+	width: 450px;
+	height: 150px;
+	display: none;
+	position: relative;
+	margin-top: 10px;
+	margin: 0 auto;
+}
+
+.entryTabs {
+	width: 200px;
+	height: 100px;
+	background-color: #985;
+	margin: 5px;
+}
+
+/* fonts and design for the website */
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 50px;
+	text-decoration: none;
+	color: #000;
+}
+
+a:hover, a:focus, a:active  {
+	text-decoration: none;
+}
+
+hr {
+	width: 100%;
+	height: 1.5px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	background-color: #a0a7af;
+}
+
+#paper {
+	border-radius: 5px;
+	height: 700px;
+	width: 85%;
+	margin: 0 auto;
+	display: none;
+}
+
+body {
+	background-image: url("images/_linedpaper copy.png");
+	background-size: 20%;
+	background-opacity: 0.5;
+	background-position: 0 0 20px 30px;
+}
+
+/* Media Query */
+@media screen and (max-width: 980px) {
+	/* this is each sectionbox (create, search and map) */
+	#create {
+		height: 300px;
+		overflow: scroll;
+	}
+
+	#search {
+		height: 300px;
+		overflow: scroll;
+	}
+
+	#mapContainer {
+		height: 300px;
+		overflow: scroll;
+	}
+		
+	#map {
+		height: 300px;
+		width: 100%;
+		border-radius: 10px;
+		border: 2px solid #000;
+		z-index: 1;
+	}
+
+	#diaryInput {
+		margin-bottom: 10%;
+
+	}
+
+	#criteria {
+		margin-top: 20%;
+	}
+	
+
+}
