@@ -1,0 +1,300 @@
+html,
+body {
+  background: red;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#00ccff, #00cc00);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#00ccff, #00cc00);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#00ccff, #007399);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#fff, #fff);
+  /* Standard syntax */
+  color: #FFFFFF;
+}
+
+.info-container {
+  background-image: url("http://cdn2.hubspot.net/hub/439309/file-2452654047-jpg/images/background-blur-city-dark.jpg?width=1400&name=background-blur-city-dark.jpg");
+  background-color: #008B8B;
+  width: 100%;
+  /*so .maincontents can scroll behind */
+  position: fixed;
+  z-index: 10;
+  /*background:inherit;*/
+}
+.maincontents {
+    padding-top:250px;
+    z-index:5;
+    overflow:auto;
+}
+.cityform {
+    background: rgb(4, 0, 0);
+  /* This is for ie8 and below */
+  background: rgba(4, 0, 0, 0.58);
+  width:100%;
+}
+
+#wiki {
+  font-family: 'Abel';
+  font-size: 16px
+}
+
+h1 {
+  font-family: 'Abel';
+  /*margin-bottom: 30px;*/
+  /*color: #00b8e6;*/
+  color: #FFFFFF;
+  /*
+  background: -webkit-linear-gradient(#FFFFFF, #d1d1e0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;*/
+}
+
+h1 span {
+  /*background-color: #00cc00;*/
+  /*background: -webkit-linear-gradient(#00cc00, yellow);*/
+  /* For Safari 5.1 to 6.0 */
+  /*background: -o-linear-gradient(#00cc00, yellow);
+  /* For Opera 11.1 to 12.0 */
+  /*background: -moz-linear-gradient(#000000, #007399);*/
+  /* For Firefox 3.6 to 15 */
+  /*background: linear-gradient(#000000, #14141f);*/
+  /* Standard syntax */
+  /*padding: 5px;
+  margin-bottom: 30px;*/
+}
+h2 {
+  font-family: 'Abel';
+}
+h4 {
+  font-family: 'Abel';
+}
+/*USE !important TO OVERRIDE CSS IN //code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"*/
+.form-control {
+  width: 20em ;
+  height: 2.3em !important;
+  /*height: 60px;*/
+  font-family: 'Abel' !important;
+  font-size: 1em !important;
+  border-radius: 30px 30px 30px 30px !important;
+}
+.btn-city {
+  font-family: 'Abel';
+  font-size: 1.2em;
+}
+/*
+.right-inner-addon {
+    position: relative;
+}
+.right-inner-addon input {
+    padding-right: 30px;    
+}
+.right-inner-addon i {
+    position: absolute;
+    right: 0px;
+    padding: 10px 12px;
+    pointer-events: none;
+}
+i {
+  color: #000000;
+}
+*/
+.jumbotron {
+  background: #001133;
+  /*background: rgb(4, 0, 0);*/
+  /* This is for ie8 and below */
+  /*background: rgba(4, 0, 0, 0.58);*/
+}
+
+#welcome {
+  font-family: 'Abel';
+}
+#time {
+   font-family: 'Abel';
+   font-size: 1.2em;
+}
+.weatherInfo {
+  font-family: 'Abel';
+}
+.basic-info {
+  float: left;
+  padding-right: 6em;
+}
+.today {
+  float: left;
+  /* display: inline-block;
+  margin: 0 auto;*/
+  padding-right: 5em;
+}
+
+.week {
+  /*text-aligh: right;
+  margin-left:auto; 
+  margin-right:0;*/
+  float: left;
+  /*display: inline-block;
+  margin: 0 auto;*/
+  /*width:100px;*/
+}
+
+.border-right {
+  /*border-right: 1px solid white;
+  margin-right: 20px;*/
+  /*padding: 20px;*/
+}
+
+ .ui-autocomplete-loading {
+    background: white url("https://www.ondutygear.com/images/loader_small.gif") right center no-repeat;
+ }
+#cityauto {
+   font-family: 'Abel';
+  background-color: #FFFFFF;
+}
+
+/*side navbar */
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #000;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+/*Google Places API CSS*/
+#map {
+  height: 400px;
+  width: 600px;
+  border: 1px solid #333;
+  color: #000000;
+  /*margin-top: 0.6em;*/
+}
+#side_bar {
+    color: #000000;
+    background: #FFFFFF;
+    height: 400px;
+    width: 330px;
+    overflow:scroll;
+    overflow-x:hidden;
+    font-family: 'Abel';
+    padding: 2em;
+}
+#map-container {
+  padding: 3em;
+  background : #001133;
+  /*background: rgb(4, 0, 0);*/
+  /* This is for ie8 and below */
+  /*background: rgba(4, 0, 0, 0.58);*/
+}
+.location-icon {
+   height: auto;
+   width: 2em;
+   float: right;
+}
+/*Footer CSS*/
+.footer-distributed{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: normal 16px sans-serif;
+
+	padding: 45px 50px;
+	margin-top: 80px;
+}
+
+.footer-distributed .footer-left p{
+	color:  #8f9296;
+	font-size: 14px;
+	margin: 0;
+}
+
+/* Footer links */
+.footer-distributed p.footer-links{
+	font-size:18px;
+	font-weight: bold;
+	color:  #ffffff;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.footer-distributed p.footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-right{
+	float: right;
+	margin-top: 6px;
+	max-width: 180px;
+}
+
+.footer-distributed .footer-right a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-left: 3px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 600px) {
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		text-align: center;
+	}
+
+	.footer-distributed .footer-right{
+		float: none;
+		margin: 0 auto 20px;
+	}
+
+	.footer-distributed .footer-left p.footer-links{
+		line-height: 1.8;
+	}
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Hello World</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+
+
+
+  
+  <!--<link rel="stylesheet" type="text/css" href="style.css">-->
+  <!-- Latest compiled and minified CSS *BOOTSTRAP ADDED IN CODEPEN FEATURE -->
+  <!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">-->
+  <link rel="stylesheet" type="text/css" href='http://fonts.googleapis.com/css?family=Abel'>
+  <link rel="stylesheet" type="text/css" href='http://fonts.googleapis.com/css?family=Snippet'>
+  <!--Font-Awesome -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="info-container">
+    <div class="container cityform">
+      <h1><strong>HelloWorld</strong></h1>
+      <!--<span></span>-->
+      
+      <div class="form-group right-inner-addon ">
+        <div class="ui-widget">
+          <input type="text" placeholder="Enter a city e.g. Boston, Massachusetts" class="city-search form-control" name="city" id="city" />
+          <i class="icon-map-marker"></i>
+        </div>
+        <br>
+        <!--<input type="submit" class="btn btn-primary btn-city" value="Submit" onclick="submitcity(document.getElementById('city').value);" />-->
+        <input type="submit" class="btn btn-primary btn-city" value="Submit"/>
+        
+      </div>
+    </div>
+    <!-- End top Container -->
+  </div>
+  <!-- End Info wrapper -->
+  <br>
+  <div class="container maincontents">
+    <!--<div id="page-content-wrapper">-->
+    <div class="jumbotron">
+      <div class="container">
+        <div class="basic-info">
+          <div id="welcome"></div>
+          <hr>
+          <div id="time"></div>
+        </div>
+        <div class="today border-right">
+          <br>
+          <!--<span class="weatherInfo" id="title"></span>-->
+          <p class="weatherInfo" id="temperature"></p>
+          <p class="weatherInfo" id="wind-chill"></p>
+          <p class="weatherInfo" id="wind-speed"></p>
+          <!--<p class="weatherInfo" id="conditions"></p>-->
+          <span id="pic"></span>
+        </div>
+        <div class="week">
+          <span class="weatherInfo" id="description"></span>
+        </div>
+      </div>
+      <!--end inner jumbotron -->
+    </div>
+    <div class="jumbotron">
+      <h2><strong>Summary</strong></h2>
+      <hr>
+      <div id="wiki"></div>
+      <br>
+    </div>
+    <div id="map-container" class="container">
+      <h2><strong>Things to Do</strong></h2>
+      <hr>
+      <table border="1">
+        <tr>
+          <td>
+            <div id="map"></div>
+          </td>
+          <td>
+            <div id="side_bar"></div>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <!--End Map-container -->
+  </div>
+
+  <footer class="footer-distributed">
+    <div class="footer-right">
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+      <a href="#"><i class="fa fa-github"></i></a>
+    </div>
+
+    <div class="footer-left">
+      <p class="footer-links">
+        <a href="#">Matt's App</a>
+      </p>
+
+      <p>Matthew Ragone &copy; 2017 - Site Powered by Google Places API, ipinfo APi, Yahoo Weather API, Wiki API, and geonames.org</p>
+    </div>
+  </footer>
+  <!--</div>-->
+  <!-- End page-content-wrapper-->
+  <!-- jQuery library -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <!--Jquery City Auto-Complete plugins -->
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <!--CSS FOR jQUery AUTOCOMPLETE Plugin -->
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <!-- Google Places API -->
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsJ19vBMgjlUmXSrvYO_ohXFaZRohe6CI&libraries=places"></script>
+  <!-- My JS file (If project exported from codepen)-->
+  <script src="script.js"></script>
+  
+    <script src="js/index.js"></script>
+
+</body>
+</html>
