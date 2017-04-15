@@ -109,7 +109,7 @@
              var Tabs = $("<div>");
              Tabs.addClass("condensedInfo");
              Tabs.attr("data-entry", filteredArray[i]);
-             Tabs.append("<div class='tabPlace'><center><p class='tabLine'>" + filteredArray[i].name + "</p><p class='tabLine'>" + filteredArray[i].entryPlace + "</p><p class='tabLine'>" + filteredArray[i].reasonTravel + "</p><p class='tabLine'>" + filteredArray[i].overview + "</p></center></div>");
+             Tabs.append("<div class='tabPlace'><center><p class='tabLine'>" + "Name: " + filteredArray[i].name + "</p><p class='tabLine'>" + "Location: " + filteredArray[i].entryPlace + "</p><p class='tabLine'>" + "Reason: " + filteredArray[i].reasonTravel + "</p><p class='tabLine'>" + "Overview: " + filteredArray[i].overview + "</p></center></div>");
              $("#resultsTabContainer").append(Tabs);
          };
 
